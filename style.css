@@ -31,6 +31,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .left {
@@ -116,4 +117,72 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left, .right {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .number {
+    font-size: 5rem;
+    width: 12rem;
+  }
+
+  .guess {
+    font-size: 4rem;
+    width: 20rem;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+    padding: 1.5rem 2.5rem;
+  }
+
+  .between, .again {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .number {
+    font-size: 4rem;
+    width: 10rem;
+  }
+
+  .guess {
+    font-size: 3.5rem;
+    width: 18rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  }
+
+  .between, .again {
+    font-size: 1rem;
+  }
 }
